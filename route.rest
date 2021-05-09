@@ -1,0 +1,31 @@
+GET http://localhost:3000/subscribers
+
+
+###
+
+GET http://localhost:3000/subscribers/6097ed440915ad2430ef1803
+
+
+###
+
+POST  http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Stefan Persson",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+
+###
+DELETE http://localhost:3000/subscribers/6097edb176999d34641bbd30
+
+###
+
+PATCH  http://localhost:3000/subscribers/6097ed440915ad2430ef1803
+Content-Type: application/json
+
+{
+    "name": "Berta Persson",
+    "subscribedToChannel": "Weeb Dev Simplified"
+}
